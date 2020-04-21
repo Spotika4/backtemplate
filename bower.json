@@ -1,0 +1,19 @@
+{
+  "name": "backtamplate",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+	"**/.*",
+	"node_modules",
+	"bower_components",
+	"vendor/bower-asset"
+  ],
+  "dependencies": {
+	"datatables": "^1.10.20",
+	"datatables-buttons": "^1.6.1",
+	"jquery-validation": "jquery-validate#^1.19.1",
+	"components-font-awesome": "^5.12.1"
+  }
+}
