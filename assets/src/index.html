@@ -1,49 +1,246 @@
 <!doctype html>
 <html lang="ru">
 <head>
-
     //= template/head.html
-
 </head>
 <body>
 
-<div class="container">
+<nav class="navbar navbar-dark bg-dark sticky-top">
+    <span class="navbar-brand">Backtemplate</span>
+</nav>
+<div class="container-fluid">
     <div class="row">
-        <div class="col">
-            <ul class="nav nav-tabs">
+        <div class="menu-sidebar nav bg-dark d-md-none d-lg-block">
+            <small class="d-block pl-3 mt-3 mb-2 text-muted text-uppercase font-weight-bold">Навигация</small>
+            <ul class="p-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Active</a>
+                    <a href="#" class="nav-link">
+                        <i class="menu-icon fas fa-list"></i> Рабочий стол
+                    </a>
+                </li>
+                <li class="nav-item open">
+                    <a href="#" class="nav-link nav-link-parent">
+                        <i class="menu-icon fas fa-th"></i> Компоненты
+                    </a>
+                    <ul class="menu-sidebar-child nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Хлебные крошки
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">
+                                Cards
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a href="#" class="nav-link nav-link-parent">
+                        <i class="menu-icon fas fa-plug"></i> Уитлиты
+                    </a>
+                    <ul class="menu-sidebar-child nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Цветовая схема
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a href="#" class="nav-link nav-link-parent">
+                        <i class="menu-icon fas fa-table"></i> Таблицы
+                    </a>
+                    <ul class="menu-sidebar-child nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Bootstrap
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Datatables
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a href="#" class="nav-link nav-link-parent">
+                        <i class="menu-icon fas fa-file"></i> Страницы
+                    </a>
+                    <ul class="menu-sidebar-child nav flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                Авторизация
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                404 ошибка
+                            </a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="container-fluid p-0">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+            <div class="container-fluid pb-5">
+                <h1 class="mb-4 mt-4"><i class="fas fa-align-center mr-2"></i> Рабочий стол</h1>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <ul class="nav nav-pills justify-content-center mt-3" role="tablist">
+                                <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#home" role="tab" aria-selected="true" class="text-white">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#about" role="tab" aria-selected="false">About</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#features" role="tab" aria-selected="false">Features</a></li>
+                            </ul>
+                            <div class="card-body">
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
+                                    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab">About</div>
+                                    <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="contact-tab">Features</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="card-title">Заголовок</div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Пример таблицы</div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">First</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Handle</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                             </div>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">Пример таблицы</div>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationServer01">Имя</label>
+                                            <input type="text" class="form-control is-valid" id="validationServer01" value="Mark" required>
+                                            <div class="valid-feedback">Заполнно без ошибок</div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationServer02">Отчество</label>
+                                            <input type="text" class="form-control is-valid" id="validationServer02" value="Otto" required>
+                                            <div class="valid-feedback">Заполнно без ошибок</div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <label for="validationServerUsername">Имя пользователя</label>
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                                </div>
+                                                <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required>
+                                                <div class="invalid-feedback">Заполнено с ошибками</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="validationServer03">Город</label>
+                                            <input type="text" class="form-control is-invalid" id="validationServer03" required>
+                                            <div class="invalid-feedback">Заполнено с ошибками</div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="validationServer04">Район</label>
+                                            <select class="custom-select is-invalid" id="validationServer04" required>
+                                                <option selected disabled value="">Choose...</option>
+                                                <option>...</option>
+                                            </select>
+                                            <div class="invalid-feedback">Заполнено с ошибками</div>
+                                        </div>
+                                        <div class="col-md-3 mb-3">
+                                            <label for="validationServer05">Индекс</label>
+                                            <input type="text" class="form-control is-invalid" id="validationServer05" required>
+                                            <div class="invalid-feedback">Заполнено с ошибками</div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                                            <label class="form-check-label" for="invalidCheck3">Согласен с условиями соглашения</label>
+                                            <div class="invalid-feedback">Необходимо согласиться с условиями</div>
+                                        </div>
+                                    </div>
+                                </form>
+                             </div>
+                            <div class="card-footer">
+                                <button class="btn btn-primary" type="submit">Submit form</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-title">ЗАголовок блока</div>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. </p>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 //= template/footer.html
 </body>
 </html>

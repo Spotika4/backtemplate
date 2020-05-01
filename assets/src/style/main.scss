@@ -40,5 +40,10 @@
 @import "../../../node_modules/bootstrap/scss/_utilities";
 @import "../../../node_modules/bootstrap/scss/_print";
 
+// Подключение нужных SCSS исходников FontAwesome 5
+@import "../../../bower_components/components-font-awesome/scss/fontawesome";
+@import "../../../bower_components/components-font-awesome/scss/solid";
+@import "../../../bower_components/components-font-awesome/scss/brands";
+
 // Подключение своих SCSS файлов
 @import "my";
