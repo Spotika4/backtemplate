@@ -1,0 +1,115 @@
+// таблицы
+.table {
+  border-left: (1 * $table-border-width) solid $table-border-color;
+  border-right: (1 * $table-border-width) solid $table-border-color;
+  border-bottom: (1 * $table-border-width) solid $table-border-color;
+  thead th {
+	text-transform: uppercase;
+	border-bottom: (1 * $table-border-width) solid $table-border-color;
+  }
+}
+
+.card {
+  margin-bottom: 1.5rem!important;
+
+  .card-title {
+	font-weight: bold;
+	line-height: 1.7;
+	text-transform: uppercase;
+	margin-bottom: 0;
+  }
+  .card-body {
+	.card-title {
+	  margin-bottom: 1.0rem;
+	}
+  }
+}
+.menu-sidebar {
+  position: fixed;
+  top: 52px;
+  width: 15%;
+  min-height: calc(100vh);
+
+  .nav-item {
+	position: relative;
+
+	.nav-link {
+	  color: $gray-500;
+	  font-size: 1rem;
+
+	  .menu-icon {
+		margin-right: 6px;
+	  }
+	}
+	:hover {
+	  color: $gray-300;
+	}
+	.active {
+	  color: $gray-300;
+	}
+	.nav-link-parent:after {
+	  position: absolute;
+	  content: "\f107";
+	  font-family: "Font Awesome 5 Free";
+	  font-size: 12px;
+	  line-height: 10px;
+	  right: 25px;
+	  top: 17px;
+	}
+	.menu-sidebar-child {
+	  display: none;
+
+	  .nav-item {
+		position: relative;
+		padding-left: calc(1rem + 15px);
+
+		:before {
+		  position: absolute;
+		  top: 7px;
+		  left: 0;
+		  content: "-";
+		}
+		.nav-link {
+		  position: relative;
+		  padding-left: 15px;
+		  font-size: .85rem;
+		}
+	  }
+	}
+  }
+  .nav-item.open {
+	.nav-link-parent {
+	  color: $gray-300;
+	}
+	.nav-link-parent:after {
+	  content: "\f106";
+	}
+	.menu-sidebar-child{
+	  display: block;
+	}
+  }
+}
+
+.menu-sidebar + .container-fluid {
+  width: 85%;
+  margin-left: 15%;
+}
+
+@media(max-width: 1440px){
+
+  .menu-sidebar {
+	width: 20%;
+  }
+  .menu-sidebar + .container-fluid {
+	width: 80%;
+	margin-left: 20%;
+  }
+}
+
+@media(max-width: 1140px){
+
+  .menu-sidebar + .container-fluid {
+	width: 100%;
+	margin-left: 0;
+  }
+}
