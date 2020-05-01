@@ -5,84 +5,12 @@
 </head>
 <body>
 
-<nav class="navbar navbar-dark bg-dark sticky-top">
+<nav class="navbar navbar-dark sticky-top bg-dark-blue">
     <span class="navbar-brand">Backtemplate</span>
 </nav>
 <div class="container-fluid">
     <div class="row">
-        <div class="menu-sidebar nav bg-dark d-md-none d-lg-block">
-            <small class="d-block pl-3 mt-3 mb-2 text-muted text-uppercase font-weight-bold">Навигация</small>
-            <ul class="p-0">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="menu-icon fas fa-list"></i> Рабочий стол
-                    </a>
-                </li>
-                <li class="nav-item open">
-                    <a href="#" class="nav-link nav-link-parent">
-                        <i class="menu-icon fas fa-th"></i> Компоненты
-                    </a>
-                    <ul class="menu-sidebar-child nav flex-column">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Хлебные крошки
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">
-                                Cards
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link nav-link-parent">
-                        <i class="menu-icon fas fa-plug"></i> Уитлиты
-                    </a>
-                    <ul class="menu-sidebar-child nav flex-column">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Цветовая схема
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link nav-link-parent">
-                        <i class="menu-icon fas fa-table"></i> Таблицы
-                    </a>
-                    <ul class="menu-sidebar-child nav flex-column">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Bootstrap
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Datatables
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link nav-link-parent">
-                        <i class="menu-icon fas fa-file"></i> Страницы
-                    </a>
-                    <ul class="menu-sidebar-child nav flex-column">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                Авторизация
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                404 ошибка
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+        //= template/sidebar.html
         <div class="container-fluid p-0">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -91,35 +19,104 @@
                     <li class="breadcrumb-item active" aria-current="page">Data</li>
                 </ol>
             </nav>
-            <div class="container-fluid pb-5">
-                <h1 class="mb-4 mt-4"><i class="fas fa-align-center mr-2"></i> Рабочий стол</h1>
+            <div class="container-fluid pb-4">
+                <h1><i class="fas fa-align-center mr-2"></i> Рабочий стол</h1>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-6">
                         <div class="card">
-                            <ul class="nav nav-pills justify-content-center mt-3" role="tablist">
-                                <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#home" role="tab" aria-selected="true" class="text-white">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#about" role="tab" aria-selected="false">About</a></li>
-                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#features" role="tab" aria-selected="false">Features</a></li>
+                            <ul class="nav nav-pills justify-content-center bg-light" role="tablist">
+                                <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#home" role="tab" aria-selected="true" class="text-white">Консультация</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#about" role="tab" aria-selected="false">Сценарии</a></li>
+                                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#features" role="tab" aria-selected="false">Разработка</a></li>
                             </ul>
                             <div class="card-body">
                                 <div class="tab-content">
-                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">Home</div>
-                                    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab">About</div>
-                                    <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="contact-tab">Features</div>
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="card-title">Консультация с широким активом</div>
+                                        <p class="card-text">В частности, консультация с широким активом обеспечивает актуальность модели развития. Повседневная практика показывает, что дальнейшее развитие различных форм деятельности говорит о возможностях анализа существующих паттернов поведения. Таким образом, разбавленное изрядной долей эмпатии, рациональное мышление создаёт предпосылки для переосмысления внешнеэкономических политик.</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <div class="card-title">Ключевые сценарии поведения</div>
+                                            <p class="card-text">Учитывая ключевые сценарии поведения, курс на социально-ориентированный национальный проект требует определения и уточнения направлений прогрессивного развития! А ещё представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть преданы социально-демократической анафеме. Таким образом, граница обучения кадров однозначно фиксирует необходимость экономической целесообразности принимаемых решений.</p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="features" role="tabpanel" aria-labelledby="contact-tab">
+                                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                            <div class="card-title">Современная методология разработки</div>
+                                            <p class="card-text">Также как современная методология разработки предоставляет широкие возможности для переосмысления внешнеэкономических политик. Имеется спорная точка зрения, гласящая примерно следующее: интерактивные прототипы, превозмогая сложившуюся непростую экономическую ситуацию, разоблачены. Повседневная практика показывает, что существующая теория не оставляет шанса для существующих финансовых и административных условий.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
+                    <div class="col-6">
                         <div class="card">
                             <div class="card-header">
                                 <div class="card-title">Заголовок</div>
                             </div>
                             <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Как принято считать, сторонники тоталитаризма в науке, вне зависимости от их уровня, должны быть ограничены исключительно образом мышления. А также сторонники тоталитаризма в науке заблокированы в рамках своих собственных рациональных ограничений. Как принято считать, элементы политического процесса, инициированные исключительно синтетически, своевременно верифицированы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="list-group flex-column mb-3" id="myTab" role="tablist">
+                                            <a class="list-group-item list-group-item-action" id="profile-tab" data-toggle="tab" href="#profile-content" role="tab" aria-controls="profile-content" aria-selected="false"> E-Mail </a>
+                                            <a class="list-group-item list-group-item-action active" id="password-tab" data-toggle="tab" href="#password-content" role="tab" aria-controls="password-content" aria-selected="true"> Пароль </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="tab-content" id="myTabContent">
+                                            <div class="tab-pane fade pb-25" id="profile-content" role="tabpanel" aria-labelledby="profile-tab">
+                                                <div class="card-title">Изменение адреса электронной почты</div>
+                                                <form id="PROFILE_UPDATE" action="#" method="post" novalidate="novalidate">
+                                                    <div class="alert-danger alert">Не удалось выполнить операцию</div>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <div class="form-group">
+                                                                <label>E-Mail</label>
+                                                                <input type="email" class="form-control is-invalid" name="email" value="administrator@administrator.com" placeholder="E-Mail">
+                                                                <div class="invalid-feedback">Необходимо указать новый email</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                                                    <a class="btn btn-light" href="#">Отменить</a></form>
+                                            </div>
+                                            <div class="tab-pane fade active show" id="password-content" role="tabpanel" aria-labelledby="password-tab">
+                                                <div class="card-title">Изменение пароля для доступа к аккаунтуы</div>
+                                                <form id="CHANGE_PASSWORD" action="#" method="post" novalidate="novalidate">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="form-group">
+                                                                <label>Пароль</label>
+                                                                <input type="password" id="PASSWORD" class="form-control is-invalid" name="password" placeholder="Пароль" aria-describedby="PASSWORD-error">
+                                                                <div id="PASSWORD-error" class="is-invalid invalid-feedback">Это поле необходимо заполнить.</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="form-group">
+                                                                <label>Повторите пароль</label>
+                                                                <input type="password" class="form-control is-invalid" name="passwordr" placeholder="Повторите пароль" aria-describedby="passwordr-error">
+                                                                <div id="passwordr-error" class="is-invalid invalid-feedback">Это поле необходимо заполнить.</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Сохранить</button>
+                                                    <a class="btn btn-light" href="#">Отменить</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

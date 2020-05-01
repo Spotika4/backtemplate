@@ -1,11 +1,11 @@
 // таблицы
-.table {
+.table.table-striped {
   border-left: (1 * $table-border-width) solid $table-border-color;
   border-right: (1 * $table-border-width) solid $table-border-color;
   border-bottom: (1 * $table-border-width) solid $table-border-color;
   thead th {
 	text-transform: uppercase;
-	border-bottom: (1 * $table-border-width) solid $table-border-color;
+	border-bottom: none;
   }
 }
 
@@ -24,11 +24,25 @@
 	}
   }
 }
+
+.nav-pills {
+  .nav-link {
+	color: $gray-500;
+	margin: 0 $spacer;
+	padding: $nav-link-padding-y * 1.58 $nav-link-padding-x * .5;
+  }
+  .nav-link.active,
+  .show > .nav-link {
+	color: $gray-700;
+	border-bottom: 2px solid $gray-700;
+  }
+}
+
 .menu-sidebar {
   position: fixed;
   top: 52px;
   width: 15%;
-  min-height: calc(100vh);
+  min-height: calc(100vh - 52px);
 
   .nav-item {
 	position: relative;

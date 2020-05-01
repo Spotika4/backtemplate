@@ -1,9 +1,10 @@
 {
-  "name": "backtamplate",
-  "description": "",
+  "name": "backtemplate",
+  "version": "0.0.2",
+  "description": "Project template using gulp",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/spotika4/backtemplate",
   "ignore": [
 	"**/.*",
 	"node_modules",

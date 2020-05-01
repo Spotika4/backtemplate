@@ -16,6 +16,46 @@ $table-border-width: $border-width !default;
 $border-color: $gray-300 !default;
 $table-border-color: $border-color !default;
 
+$spacer: 1rem !default;
+
+// цветовая схема
+$blue: #0866C6 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+$dark-blue: #1D2939 !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+	"dark-blue":  $dark-blue
+  ),
+  $colors
+);
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+	"dark-blue":  $dark-blue
+  ),
+  $theme-colors
+);
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-300 !default;
+$dark: $gray-800 !default;
+
 // шрифты
 $font-family-sans-serif: "Fira Sans", "Helvetica Neue", Arial, sans-serif !default;
 $font-family-monospace: "Fira Sans", "Helvetica Neue", Arial, sans-serif, monospace !default;
@@ -25,6 +65,8 @@ $font-size-base: 0.85rem !default;
 $font-size-lg: $font-size-base * 1.5 !default;
 $font-size-sm: $font-size-base * .750 !default;
 
+$line-height-base: 175rem !default;
+
 // заголовки
 $h1-font-size: $font-size-base * 2 !default;
 $h2-font-size: $font-size-base * 1.75 !default;
@@ -33,6 +75,7 @@ $h4-font-size: $font-size-base * 1.2 !default;
 $h5-font-size: $font-size-base * 1.1 !default;
 $h6-font-size: $font-size-base !default;
 $headings-font-weight: 600 !default;
+$headings-margin-bottom: $spacer * 1.25 !default;
 
 // радиус границ у элементов (bootstrap)
 $border-radius: 0;
@@ -41,6 +84,8 @@ $border-radius-sm: 0;
 
 // отступы у вкладок (bootstrap)
 $nav-tabs-margin-bottom: 1.25rem !default;
+$nav-pills-link-active-bg: transparent;
+$nav-pills-link-active-color: $primary !default;
 
 // папка со шрифтами (fontawesome)
 $fa-font-path: "../fonts" !default;
