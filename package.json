@@ -1,12 +1,12 @@
 {
   "name": "project-on-bootstrap",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Project template using gulp",
-  "author": "itchief.ru",
+  "author": "Spotika4",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/itchief/gulp-project-bootstrap-4.git"
+    "url": "git://github.com/spotika4/backtemplate.git"
   },
   "dependencies": {
     "bootstrap": "4.4.1",
