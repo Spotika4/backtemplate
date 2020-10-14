@@ -15,6 +15,8 @@
 	"datatables": "^1.10.20",
 	"datatables-buttons": "^1.6.1",
 	"jquery-validation": "jquery-validate#^1.19.1",
-	"components-font-awesome": "^5.12.1"
+	"components-font-awesome": "^5.12.1",
+	"jquery.cookie": "^1.4.1",
+	"select2": "~4.0"
   }
 }

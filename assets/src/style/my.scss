@@ -1,3 +1,8 @@
+textarea:focus, input:focus, select:focus, select:active {
+  outline: 0;
+  outline-offset: 0;
+}
+
 // таблицы
 .table.table-striped {
   border-left: (1 * $table-border-width) solid $table-border-color;
