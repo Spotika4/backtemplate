@@ -24,8 +24,8 @@
 
 // Импортируем Datatables
 //= ../../../bower_components/datatables/media/js/jquery.dataTables.min.js
-//= ../../../bower_components/datatables/media/js/dataTables.bootstrap4.min.js
 //= ../../../bower_components/datatables-buttons/js/dataTables.buttons.js
+//= ../../../bower_components/datatables/media/js/dataTables.bootstrap4.min.js
 //= ../../../bower_components/datatables-buttons/js/buttons.bootstrap4.js
 
 // Импортируем Select2

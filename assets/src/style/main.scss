@@ -1,6 +1,9 @@
 // Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
 @import "variables";
 
+// Импортируем Select2
+@import "../../../bower_components/select2/dist/css/select2.min.css";
+
 // Подключение нужных SCSS исходников Bootstrap 4
 @import "../../../node_modules/bootstrap/scss/_functions";
 @import "../../../node_modules/bootstrap/scss/_variables";
@@ -44,9 +47,6 @@
 @import "../../../bower_components/components-font-awesome/scss/fontawesome";
 @import "../../../bower_components/components-font-awesome/scss/solid";
 @import "../../../bower_components/components-font-awesome/scss/brands";
-
-// Импортируем Select2
-@import "../../../bower_components/select2/dist/css/select2.min.css";
 
 // Импортируем Select2 Bootstrap
 @import "../../../node_modules/@ttskch/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css";
